@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.cs-w {
+    width: 1100px !important;
+}
+
+.cs-index-1 {
+    z-index: 1 !important;
+}
+
+.cs-index-2 {
+    z-index: 2 !important;
+}
+
+.cs-rounded-left {
+    border-radius: 1rem 0 0 1rem !important;
+}
+
+.cs-rounded-right {
+    border-radius: 0 1rem 1rem 0 !important;
+}
+
+/*Background*/
+.cs-bg-image {
+    background-color: hsl(240, 78%, 98%) !important;
+    background: url('../images/bg-top.svg') no-repeat top right,
+                url('../images/bg-bottom.svg') no-repeat bottom left;
+}
+
+.cs-bg-item {
+    background: linear-gradient(90deg, rgba(163,168,240,1) 0%, rgba(105,111,221,1) 100%) !important;
+}
+
+.cs-bg-gradient {
+    background: linear-gradient(180deg, rgba(163,168,240,1) 0%, rgba(105,111,221,1) 100%) !important;
+}
+
+/*Font*/
+.cs-tc-grayish-blue {
+    color: hsl(233, 13%, 49%) !important;
+}
+
+.cs-tc-light-grayish-grey {
+    color: hsl(234, 14%, 74%) !important;
+}
+
+.cs-tc-dark-grayish-blue {
+    color: hsl(232, 13%, 33%) !important;
+}
+
+.cs-btn {
+    position: relative;
+    border-color: transparent !important;
+    transition: .5s !important;
+}
+
+.cs-btn:hover {
+    border-color: hsl(237, 63%, 64%) !important;
+    color: hsl(237, 63%, 64%) !important;
+    background: linear-gradient(90deg, transparent 0%, transparent 100%) !important;
+}
+
+.cs-btn-2 {
+    border-color: white !important;
+    color: hsl(237, 63%, 64%) !important;
+    transition: .5s !important;
+}
+
+.cs-btn-2:hover {
+    color: white !important;
+    background-color: transparent !important;
+    transition: .5s !important;
+}
+
+.cs-switch .form-check-input {
+    box-shadow: none !important;
+    background: linear-gradient(90deg, rgba(163,168,240,1) 0%, rgba(105,111,221,1) 100%) !important;
+    border: none !important;
+    position: relative;
+    transition: .5s !important;
+    height: 24px;
+    width: 40px !important;
+}
+
+.cs-switch .form-check-input:hover {
+    opacity: 55% !important;
+}
+
+.cs-switch .form-check-input::after { 
+    content: ''; 
+    display: block; 
+    width: 20px; /* Adjust size as needed */ 
+    height: 20px; /* Adjust size as needed */ 
+    background-color: white; /* Handle color */ 
+    border-radius: 50%; /* Make it round */ 
+    position: absolute; 
+    top: 50%; 
+    left: 2px; /* Distance from left */ 
+    transform: translateY(-50%); 
+    transition: left 0.3s;
+} 
+
+.cs-switch .form-check-input:checked::after { 
+    left: calc(100% - 23px); /* Adjusted for handle size and padding */ 
+}
+
+.cs-switch .form-check-label { 
+    padding-top: 4px !important;
+    padding-left: 5px !important;
+}
+
+@media (max-width: 991px) {
+    .cs-w {
+        width: 100% !important;
+    }
+
+    .cs-rounded-right, .cs-rounded-left {
+        border-radius: 1em !important;
+    }
+}
