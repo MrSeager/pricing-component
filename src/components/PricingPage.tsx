@@ -61,7 +61,7 @@ const PricingPage: FC = () => {
         <Container fluid className='p-0 min-vh-100 cs-bg-image d-flex flex-column align-items-center justify-content-center overflow-hidden'>
             <Container fluid className='d-flex flex-column align-items-center gap-3'>
                 <animated.div style={springOp}>
-                    <h1 className='cs-tc-grayish-blue'>Our Pricing</h1>
+                    <h1 className='cs-tc-grayish-blue text-center'>Our Pricing</h1>
                     <Container fluid className='cs-tc-light-grayish-grey d-flex flex-row align-items-center justify-content-center'>
                         <h2 className='h6 m-0 pe-2'>Annually</h2>
                         <Form.Check // prettier-ignore
